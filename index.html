@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ø Zeroremdy</title>
+  <title>Ø Zeroremedy</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
 
@@ -15,55 +15,86 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      padding-top: 80px;
+      box-sizing: border-box;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #000;
+      border-bottom: 1px solid #00ffff;
+      display: flex;
       justify-content: center;
-      height: 100vh;
-      overflow: hidden;
+      gap: 30px;
+      padding: 20px 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: #00ffff;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffffff;
     }
 
     h1 {
       font-size: 10rem;
-      margin: 0;
-      position: relative;
+      margin: 20px 0 30px 0;
       animation: glitch 2s infinite;
       color: #00ffff;
+      text-align: center;
     }
 
-    p {
-      margin-top: 20px;
-      color: #ffffff;
-      font-size: 1.5rem;
-      opacity: 0.85;
-      letter-spacing: 2px;
+    .about {
+      max-width: 800px;
+      text-align: center;
+      color: #00ffff;
+      font-size: 1rem;
+      line-height: 1.5;
+      opacity: 0.9;
+      border: 1px solid #00ffff;
+      padding: 20px;
+      border-radius: 8px;
+      background-color: rgba(0, 0, 0, 0.5);
+      margin-bottom: 30px;
     }
 
     .email {
-      margin-top: 10px;
+      margin-top: 20px;
       font-size: 1rem;
       color: #00ffff;
+      opacity: 0.85;
+      text-align: center;
+      margin-bottom: 50px;
     }
 
     @keyframes glitch {
-      0% {
-        text-shadow: 2px 2px #00ffff, -2px -2px #0000ff;
-      }
-      25% {
-        text-shadow: -2px 2px #00ffff, 2px -2px #0000ff;
-      }
-      50% {
-        text-shadow: 2px -2px #00ffff, -2px 2px #0000ff;
-      }
-      75% {
-        text-shadow: -2px -2px #00ffff, 2px 2px #0000ff;
-      }
-      100% {
-        text-shadow: 2px 2px #00ffff, -2px -2px #0000ff;
-      }
+      0% { text-shadow: 2px 2px #00ffff, -2px -2px #0000ff; }
+      25% { text-shadow: -2px 2px #00ffff, 2px -2px #0000ff; }
+      50% { text-shadow: 2px -2px #00ffff, -2px 2px #0000ff; }
+      75% { text-shadow: -2px -2px #00ffff, 2px 2px #0000ff; }
+      100% { text-shadow: 2px 2px #00ffff, -2px -2px #0000ff; }
     }
   </style>
 </head>
 <body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="osint.html">OSINT</a>
+  </nav>
+
   <h1>Ø</h1>
-  <p>COMING SOON</p>
-  <div class="email">Contact: Zeroremdy@protonmail.com</div>
+
+  <div class="about">
+    Hi I am Zeroremedy, part of Nortic. I am a Canadian hacker focused on Passwords, Accounts, Identities, and OSINT, but I like making many tools just to have fun. I like finding exploits not to cause harm but to learn. This website has learning tools I will use on a regular basis—feel free to look around. If you have any questions, Zeroremedy@protonmail.com is my email. Hope you have an amazing day.
+  </div>
+
+  <div class="email">Contact: zeroremedy@protonmail.com</div>
 </body>
 </html>
