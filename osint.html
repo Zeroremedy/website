@@ -6,16 +6,17 @@
   <title>OSINT - Zeroremedy</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
-
     body {
       margin: 0;
       background-color: #000;
       color: #00ffff;
       font-family: 'Share Tech Mono', monospace;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       padding-top: 80px;
       box-sizing: border-box;
     }
-
     nav {
       position: fixed;
       top: 0;
@@ -24,58 +25,45 @@
       border-bottom: 1px solid #00ffff;
       display: flex;
       justify-content: center;
-      gap: 30px;
+      gap: 20px;
       padding: 20px 0;
       z-index: 1000;
     }
-
     nav a {
       color: #00ffff;
       text-decoration: none;
       font-size: 1rem;
-      transition: color 0.3s;
+      border: 1px solid #00ffff;
+      padding: 8px 16px;
+      border-radius: 8px;
+      transition: background-color 0.3s, color 0.3s;
     }
-
     nav a:hover {
-      color: #ffffff;
+      background-color: #00ffff;
+      color: #000;
     }
-
-    .content {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 20px;
-      text-align: center;
-    }
-
     h1 {
       font-size: 3rem;
-      margin-bottom: 20px;
+      margin: 20px 0 30px 0;
       color: #00ffff;
+      text-align: center;
     }
-
-    p {
+    .section {
+      max-width: 800px;
+      text-align: left;
+      color: #00ffff;
       font-size: 1rem;
       line-height: 1.5;
       opacity: 0.9;
+      border: 1px solid #00ffff;
+      padding: 20px;
+      border-radius: 8px;
+      background-color: rgba(0, 0, 0, 0.5);
       margin-bottom: 30px;
     }
-
-    .pdf-links {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 15px;
-    }
-
-    .pdf-links a {
+    a {
       color: #00ffff;
       text-decoration: underline;
-      font-size: 1rem;
-      transition: color 0.3s;
-    }
-
-    .pdf-links a:hover {
-      color: #ffffff;
     }
   </style>
 </head>
@@ -83,22 +71,23 @@
   <nav>
     <a href="index.html">Home</a>
     <a href="osint.html">OSINT</a>
+    <a href="betterprivacy.html">Better Privacy</a>
   </nav>
 
-  <div class="content">
-    <h1>🔍 Open Source Intelligence (OSINT)</h1>
+  <h1>🔍 OSINT</h1>
+
+  <div class="section">
     <p>
       Open Source Intelligence (OSINT) refers to the collection, analysis, and dissemination of information from publicly available sources. It plays a critical role in research, cybersecurity, investigative work, and digital threat assessment.
     </p>
     <p>
       Below is a curated collection of OSINT tools, guides, and policies designed to support your work. You can preview or download each document directly from our shared resource folder.
     </p>
-
-    <div class="pdf-links">
-      <a href="pdfs/OSINT_Resources.pdf" target="_blank">📄 OSINT Resources PDF</a>
-      <a href="pdfs/Osint_Cheat_Sheet.pdf" target="_blank">📄 OSINT Cheat Sheet PDF</a>
-      <a href="pdfs/Google_dorks.pdf" target="_blank">📄 Google Dorks PDF</a>
-    </div>
+    <ul>
+      <li><a href="OSINT_Resources.pdf" target="_blank">📄 OSINT Resources (PDF)</a></li>
+      <li><a href="Osint_Cheat_Sheet.pdf" target="_blank">📄 OSINT Cheat Sheet (PDF)</a></li>
+      <li><a href="Google_dorks.pdf" target="_blank">📄 Google Dorks (PDF)</a></li>
+    </ul>
   </div>
 </body>
 </html>

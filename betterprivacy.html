@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Better Privacy - Zeroremedy</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+    body {
+      margin: 0;
+      background-color: #000;
+      color: #00ffff;
+      font-family: 'Share Tech Mono', monospace;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 80px;
+      box-sizing: border-box;
+    }
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #000;
+      border-bottom: 1px solid #00ffff;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: #00ffff;
+      text-decoration: none;
+      font-size: 1rem;
+      border: 1px solid #00ffff;
+      padding: 8px 16px;
+      border-radius: 8px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    nav a:hover {
+      background-color: #00ffff;
+      color: #000;
+    }
+    h1 {
+      font-size: 3rem;
+      margin: 20px 0 30px 0;
+      color: #00ffff;
+      text-align: center;
+    }
+    .section {
+      max-width: 800px;
+      text-align: left;
+      color: #00ffff;
+      font-size: 1rem;
+      line-height: 1.5;
+      opacity: 0.9;
+      border: 1px solid #00ffff;
+      padding: 20px;
+      border-radius: 8px;
+      background-color: rgba(0, 0, 0, 0.5);
+      margin-bottom: 30px;
+    }
+    a {
+      color: #00ffff;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="osint.html">OSINT</a>
+    <a href="betterprivacy.html">Better Privacy</a>
+  </nav>
+
+  <h1>Better Privacy</h1>
+
+  <div class="section">
+    <p>
+      I’m going to tell you how <em>I</em> typically get other people’s passwords—so you can protect yourself better.
+    </p>
+    <p>
+      I get passwords by looking over shoulders or watching Xbox sign-in screens. On computers, I check browser profiles for saved passwords.
+    </p>
+    <p>
+      If I see someone unlock their iPhone, I can use the built-in Passwords app to view and copy their saved logins. On Chrome or Edge, it’s easy to export saved passwords to a USB drive for later.
+    </p>
+    <p>
+      If they have 2FA, I’ll try to set up a passkey on their device while I have access—but most people don’t even have 2FA enabled. Sometimes, just asking “Can I use your computer?” is enough to get into their accounts.
+    </p>
+    <p>
+      Once I have one account, I’ll check the export for other linked accounts to “bridge” and access even more.
+    </p>
+    <p>
+      None of these methods require fancy hacking scripts. The #1 flaw in any system is always the <em>user</em>.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>How Do You Avoid This?</h2>
+    <ul>
+      <li>✅ Enable Multi-Factor Authentication (MFA / 2FA) so logins require a code from your phone or app.</li>
+      <li>✅ Review your logged-in devices regularly—if you see anything suspicious, sign out and change your password.</li>
+      <li>✅ Check <a href="https://haveibeenpwned.com" target="_blank">HaveIBeenPwned.com</a> to see if your credentials were in any data breach.</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Tips for Better Privacy</h2>
+    <ul>
+      <li>✅ Don’t let people you don’t trust use your computer or phone.</li>
+      <li>✅ Don’t save passwords in your browser without a master password.</li>
+      <li>✅ Use a password manager that encrypts your vault.</li>
+      <li>✅ Set up strong, unique passwords for every service.</li>
+      <li>✅ Regularly review and update your security settings on accounts.</li>
+      <li>✅ Cover your screen when entering passwords in public.</li>
+    </ul>
+  </div>
+</body>
+</html>

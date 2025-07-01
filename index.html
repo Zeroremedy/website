@@ -6,7 +6,6 @@
   <title>Ø Zeroremedy</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
-
     body {
       margin: 0;
       background-color: #000;
@@ -18,7 +17,6 @@
       padding-top: 80px;
       box-sizing: border-box;
     }
-
     nav {
       position: fixed;
       top: 0;
@@ -27,22 +25,23 @@
       border-bottom: 1px solid #00ffff;
       display: flex;
       justify-content: center;
-      gap: 30px;
+      gap: 20px;
       padding: 20px 0;
       z-index: 1000;
     }
-
     nav a {
       color: #00ffff;
       text-decoration: none;
       font-size: 1rem;
-      transition: color 0.3s;
+      border: 1px solid #00ffff;
+      padding: 8px 16px;
+      border-radius: 8px;
+      transition: background-color 0.3s, color 0.3s;
     }
-
     nav a:hover {
-      color: #ffffff;
+      background-color: #00ffff;
+      color: #000;
     }
-
     h1 {
       font-size: 10rem;
       margin: 20px 0 30px 0;
@@ -50,7 +49,6 @@
       color: #00ffff;
       text-align: center;
     }
-
     .about {
       max-width: 800px;
       text-align: center;
@@ -64,7 +62,6 @@
       background-color: rgba(0, 0, 0, 0.5);
       margin-bottom: 30px;
     }
-
     .email {
       margin-top: 20px;
       font-size: 1rem;
@@ -73,7 +70,10 @@
       text-align: center;
       margin-bottom: 50px;
     }
-
+    .email a {
+      color: #00ffff;
+      text-decoration: underline;
+    }
     @keyframes glitch {
       0% { text-shadow: 2px 2px #00ffff, -2px -2px #0000ff; }
       25% { text-shadow: -2px 2px #00ffff, 2px -2px #0000ff; }
@@ -87,14 +87,17 @@
   <nav>
     <a href="index.html">Home</a>
     <a href="osint.html">OSINT</a>
+    <a href="betterprivacy.html">Better Privacy</a>
   </nav>
 
   <h1>Ø</h1>
 
   <div class="about">
-    Hi I am Zeroremedy, part of Nortic. I am a Canadian hacker focused on Passwords, Accounts, Identities, and OSINT, but I like making many tools just to have fun. I like finding exploits not to cause harm but to learn. This website has learning tools I will use on a regular basis—feel free to look around. If you have any questions, Zeroremedy@protonmail.com is my email. Hope you have an amazing day.
+    Hi I am Zeroremedy, part of Nortic. I am a Canadian hacker focused on Passwords, Accounts, Identities, and OSINT, but I like making many tools just to have fun. I like finding exploits not to cause harm but to learn. This website has learning tools I will use on a regular basis—feel free to look around. If you have any questions, feel free to reach out. Hope you have an amazing day.
   </div>
 
-  <div class="email">Contact: zeroremedy@protonmail.com</div>
+  <div class="email">
+    Contact: <a href="mailto:zeroremedy@protonmail.com">zeroremedy@protonmail.com</a>
+  </div>
 </body>
 </html>
